@@ -1,0 +1,244 @@
+.logo {
+    width: 150px;
+    height: 150px;
+    background-image: url(../yottooicon-64x64.png);
+    background-size: 150px 150px;
+}
+
+.top {
+    width: 80px;
+    height: 80px;
+    background-image: url(../Img/TOP.png);
+    background-size: 80px 80px;
+}
+
+.jgl {
+    width: 80px;
+    height: 80px;
+    background-image: url(../Img/JGL.png);
+    background-size: 80px 80px;
+}
+
+.mid {
+    width: 80px;
+    height: 80px;
+    background-image: url(../Img/MID.png);
+    background-size: 80px 80px;
+}
+
+.adc {
+    width: 80px;
+    height: 80px;
+    background-image: url(../Img/ADC.png);
+    background-size: 80px 80px;
+}
+
+.sup {
+    width: 80px;
+    height: 80px;
+    background-image: url(../Img/SUP.png);
+    background-size: 80px 80px;
+}
+
+.iron {
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/iron.png);
+    background-size: 40px 40px;
+}
+
+.bronze {
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/bronze.png);
+    background-size: 40px 40px;
+}
+
+.silver {
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/silver.png);
+    background-size: 40px 40px;
+}
+
+.gold {
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/gold.png);
+    background-size: 40px 40px;
+}
+
+.platinum {
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/platinum.png);
+    background-size: 40px 40px;
+}
+
+.diamond {
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/diamond.png);
+    background-size: 40px 40px;
+}
+
+.master {
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/master.png);
+    background-size: 40px 40px;
+}
+
+.grandmaster {
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/grandmaster.png);
+    background-size: 40px 40px;
+}
+
+.challenger {
+    width: 40px;
+    height: 40px;
+    background-image: url(../Img/challenger.png);
+    background-size: 40px 40px;
+}
+
+.mem1 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/0.png);
+    background-size:cover;
+}
+
+.mem2 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/2.jpg);
+    background-size:cover;
+}
+
+.mem3 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/3.jpg);
+    background-size:cover;
+}
+
+.mem4 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/0.png);
+    background-size:cover;
+}
+
+.mem5 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/0.png);
+    background-size:cover;
+}
+
+.mem6 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/0.png);
+    background-size:cover;
+}
+
+.mem7 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/7.png);
+    background-size:cover;
+}
+
+.mem8 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/0.png);
+    background-size:cover;
+}
+
+.mem9 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/9.jpg);
+    background-size:cover;
+}
+
+.mem10 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/10.jpg);
+    background-size:cover;
+}
+
+.mem11 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/11.jpg);
+    background-size:cover;
+}
+
+.mem12 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/0.png);
+    background-size:cover;
+}
+
+.mem13 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/0.png);
+    background-size:cover;
+}
+
+.mem14 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/14.jpg);
+    background-size:cover;
+}
+
+.mem15 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/15.jpg);
+    background-size:cover;
+}
+
+.mem16 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/0.png);
+    background-size:cover;
+}
+
+.mem17 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/17.jpg);
+    background-size:cover;
+}
+
+.mem18 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/18.jpg);
+    background-size:cover;
+}
+
+.mem19 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/0.png);
+    background-size:cover;
+}
+
+.mem20 {
+    width: 80px;
+    height: 80px;
+    background-image: url(../prof/20.jpg);
+    background-size:cover;
+}

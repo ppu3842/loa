@@ -1,0 +1,393 @@
+html {
+    background-color: #101e2c;
+    color: #FEFEFE;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow:hidden;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background-color: #001010;
+    color: #E1E1E1;
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.margin-20 {
+    height: 20px;
+}
+
+.line {
+    height: 1px;
+    border-bottom: 1px solid #2a3350;
+}
+
+.profile {
+    border-radius: 70%;
+    border: 1px solid #00a8f3;
+}
+
+.login_frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_title {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.input_box {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #E1E1E1;
+    margin: 10px auto 10px auto;
+}
+
+.btn_login {
+    width: 304px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #385492;
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+    cursor: pointer;
+}
+
+.btn_login:hover {
+    background-color: #4864A2;
+}
+
+.btn_login:active {
+    background-color: #2a3350;
+}
+
+.main-frame {
+    display: flex;
+    justify-content: space-around;
+}
+
+.l-frame,
+.r-frame {
+    width: calc(37% - 5px);
+    height: 950px;
+    background: #142430;
+}
+
+.m-frame {
+    width: calc(25% - 5px);
+    height: 950px;
+    background: #142430;
+}
+
+.box {
+    border: 1px solid #2a3350;
+}
+
+.title {
+    height: 30px;
+    line-height: 30px;
+    background: #2a3350;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    text-indent: 10px;
+}
+
+.point_box {
+    display: flex;
+}
+
+.point {
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    margin: auto 5px auto 10px;
+    text-align: center;
+    background-color: #161D24;
+    color: #b56582;
+    font-weight: bold;
+}
+
+.member_box {
+    height: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #041119;
+    margin-bottom: 20px;
+}
+
+.member {
+    width: 20%;
+    margin: 30px 30px 10px 30px;
+}
+
+.nick,
+.tear {
+    width: 82px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.target_box {
+    height: 150px;
+    /*    line-height: 150px;*/
+    background-color: #041119;
+}
+
+.target_profile {
+    width: 150px !important;
+    height: 150px !important;
+    background-size: cover !important;
+}
+
+.target_profile_box {
+    height: 100px;
+    display: flex;
+}
+
+.comment {
+    height: 40px;
+    line-height: 40px;
+    font-size: 11px;
+    font-weight: bold;
+    text-indent: 10px;
+}
+
+.target_nick,
+.target_champ {
+    width: 321px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.target_champ {
+    margin-bottom: 10px;
+}
+
+.target_tear {
+    width: 321px;
+    margin-left: 15px;
+}
+
+.chat_hist {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 550px;
+    background-color: #001010;
+    margin-bottom: 10px;
+    flex-wrap: nowrap; 
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.chat_hist::-webkit-scrollbar {
+    display: none;
+}
+
+.value_box {
+    display: flex;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+.chat_value {}
+
+.dir_value {}
+
+.put_value {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #2a3350;
+    color: #E1E1E1;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 21px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.put_value:hover {
+    background-color: #3a4360;
+}
+
+.put_value:active {
+    background-color: #1a2340;
+}
+
+.timer {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #e44252;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #E1E1E1;
+}
+
+.start_btn {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #385492;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #E1E1E1;
+}
+
+.disabled {
+    /* background-color: #2a3350; */
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.start_btn:hover {
+    background-color: #4864A2;
+}
+
+
+.start_btn:active {
+    background-color: #2a3350;
+}
+
+.auc_box {
+    height: 550px;
+}
+
+.line_box {
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    background-color: #041119;
+}
+
+.line_box div:first-child {
+    margin: 10px 0px 0px 10px;
+}
+
+.ver_line {
+    width: 10px;
+    border-right: 5px solid #4864A2;
+}
+
+.bid_box {
+    width: 592px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bid_box div {
+    margin: 10px 0px 0px 10px;
+}
+
+.failed_box {
+    height: 155px;
+    background-color: #041119;
+}
+
+.failed_top {
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.failed_title {
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px 0px 0px 5px;
+    background-color: #142430;
+    color: #c8aa6d;
+}
+
+.failed_over {
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px 5px 0px 0px;
+    background-color: #142430;
+    color: #c8aa6d;
+    /*    display: none;*/
+}
+
+.failed_member {
+    display: flex;
+    margin-top: 15px;
+}
+
+.failed_member div {
+    margin: 0px 9px 0px 9px;
+}
+
+.memo_box {
+    width: 700px;
+    height: 190px;
+    background-color: #041119;
+    margin-top: 10px;
+    border: none;
+    resize: none;
+    color: #E1E1E1;
+    font-size: 15px;
+}
+
+.memo_box:focus {
+    outline: none;
+}

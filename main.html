@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="../js/YCI.json"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript" src="../js/main.js"></script>
+    
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../css/img.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="64x64" href="../yottooicon-64x64.png">
+    <title>팀 경매</title>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="main-frame">
+            <div class="l-frame">
+                <div class="5 box">
+                    <div class="5 title">
+                        <div class="5 name">
+                            백서른하나 팀
+                        </div>
+                        <div class="point_box">
+                            <div>포인트</div>
+                            <div class="5 point">
+                                1000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="5 member_box">
+                        <div class="5 member">
+                            <div class="top"></div>
+                        </div>
+                        <div class="5 member">
+                            <div class="profile mem5"></div>
+                            <div class="nick">백서른하나</div>
+                            <div class="tear gold"></div>
+                        </div>
+                        <div class="5 member">
+                            <div class="mid"></div>
+                        </div>
+                        <div class="5 member">
+                            <div class="adc"></div>
+                        </div>
+                        <div class="5 member">
+                            <div class="sup"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="6 box">
+                    <div class="6 title">
+                        <div class="6 name">
+                            영웅재성 팀
+                        </div>
+                        <div class="point_box">
+                            <div>포인트</div>
+                            <div class="6 point">
+                                1000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="6 member_box">
+                        <div class="6 member">
+                            <div class="top"></div>
+                        </div>
+                        <div class="6 member">
+                            <div class="profile mem6"></div>
+                            <div class="nick">영웅재성</div>
+                            <div class="tear gold"></div>
+                        </div>
+                        <div class="6 member">
+                            <div class="mid"></div>
+                        </div>
+                        <div class="6 member">
+                            <div class="adc"></div>
+                        </div>
+                        <div class="6 member">
+                            <div class="sup"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="7 box">
+                    <div class="7 title">
+                        <div class="7 name">
+                            pub2 팀
+                        </div>
+                        <div class="point_box">
+                            <div>포인트</div>
+                            <div class="7 point">
+                                1000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="7 member_box">
+                        <div class="7 member">
+                            <div class="top"></div>
+                        </div>
+                        <div class="7 member">
+                            <div class="profile mem7"></div>
+                            <div class="nick">pub2</div>
+                            <div class="tear platinum"></div>
+                        </div>
+                        <div class="7 member">
+                            <div class="mid"></div>
+                        </div>
+                        <div class="7 member">
+                            <div class="adc"></div>
+                        </div>
+                        <div class="7 member">
+                            <div class="sup"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="8 box">
+                    <div class="8 title">
+                        <div class="8 name">
+                            Holocouncil 팀
+                        </div>
+                        <div class="point_box">
+                            <div>포인트</div>
+                            <div class="8 point">
+                                1000
+                            </div>
+                        </div>
+                    </div>
+                    <div class="8 member_box">
+                        <div class="8 member">
+                            <div class="top"></div>
+                        </div>
+                        <div class="8 member">
+                            <div class="profile mem8"></div>
+                            <div class="nick">Holocouncil</div>
+                            <div class="tear gold"></div>
+                        </div>
+                        <div class="8 member">
+                            <div class="mid"></div>
+                        </div>
+                        <div class="8 member">
+                            <div class="adc"></div>
+                        </div>
+                        <div class="8 member">
+                            <div class="sup"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="m-frame">
+                <div class="info">
+                    <div class="target_box">
+                        <div class="target_profile_box">
+                            <div class="target_profile" id="target_profile"></div>
+                            <div class="target_info">
+                                <div class="target_nick"></div>
+                                <div class="target_tear"></div>
+                                <div class="target_champ"></div>
+                                <div class="line"></div>
+                                <div class="comment"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin-20"></div>
+                <div class="chat">
+                    <div id = 'chat_hist' class="chat_hist"></div>
+                    <div class="timer">Timer</div>
+                    <div class="value_box">
+                        <input type="number" id = 'min_value' class="min_value" autocomplete="off" value="1" readonly>
+                        <div id = 'dir_put_value' class="put_value dir">즉시 입찰</div>
+                    </div>
+                    <div class="value_box">
+                        <input type="number" id = 'dir_value' class="dir_value" autocomplete="off" placeholder="0"
+                            oninput="maxLengthCheck(this)">
+                        <div id = 'put_value'class="put_value">입찰</div>
+                    </div>
+                </div>
+                <div id="start_btn" class="start_btn"> 시작 </div>
+            </div>
+            <div class="r-frame">
+                <div class="auc_box">
+                    <div class="line_box top_auc">
+                        <div class="top"></div>
+                        <div class="ver_line"></div>
+                        <div class="bid_box">
+                            <div class="profile mem1"></div>
+                            <div class="profile mem2"></div>
+                            <div class="profile mem3"></div>
+                            <div class="profile mem4"></div>
+                        </div>
+                    </div>
+                    <div class="line_box jgl_auc">
+                        <div class="jgl"></div>
+                        <div class="ver_line"></div>
+                        <div class="bid_box">
+                            <div class="profile mem5 disabled"></div>
+                            <div class="profile mem6 disabled"></div>
+                            <div class="profile mem7 disabled"></div>
+                            <div class="profile mem8 disabled"></div>
+                        </div>
+                    </div>
+                    <div class="line_box mid_auc">
+                        <div class="mid"></div>
+                        <div class="ver_line"></div>
+                        <div class="bid_box">
+                            <div class="profile mem9"></div>
+                            <div class="profile mem10"></div>
+                            <div class="profile mem11"></div>
+                            <div class="profile mem12"></div>
+                        </div>
+                    </div>
+                    <div class="line_box adc_auc">
+                        <div class="adc"></div>
+                        <div class="ver_line"></div>
+                        <div class="bid_box">
+                            <div class="profile mem13"></div>
+                            <div class="profile mem14"></div>
+                            <div class="profile mem15"></div>
+                            <div class="profile mem16"></div>
+                        </div>
+                    </div>
+                    <div class="line_box sup_auc">
+                        <div class="sup"></div>
+                        <div class="ver_line"></div>
+                        <div class="bid_box">
+                            <div class="profile mem17"></div>
+                            <div class="profile mem18"></div>
+                            <div class="profile mem19"></div>
+                            <div class="profile mem20"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="failed_box">
+                    <div class="failed_top">
+                        <div class="failed_title">유찰 순서</div>
+                        <!-- <div class="failed_over"></div> -->
+                        
+                    </div>
+                    <div class="failed_member">
+                        
+                    </div>
+                </div>
+                <textarea class="memo_box" placeholder="여기는 메모장 입니다."></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
