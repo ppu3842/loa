@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Input Element</title>
+    </head>
+    <body>
+        <!-- 너비를 넘어가면 자동 스크롤링 -->
+        <input type="text" size="40" placeholder="아이디를 적어주세요."> <br>
+        <input type="text" size="40" placeholder="비밀번호를 적어주세요."> <br>
+        
+        <input type="radio" name="aaa">aaa
+        <input type="radio" name="aaa">bbb
+        <br>
+
+        <!-- label 요소를 이용하면 글씨를 눌렀을때 선택이 됨 -->
+        <input type="radio" name="rg2" id="rb1" checked="checked"> <label for="rb1">male</label>
+        <input type="radio" name="rg2" id="rb2" checked="checked"> <label for="rb2">female</label>
+
+
+        <hr>
+        <!-- 체크박스 = 멀티 초이스 -->
+        <input type="checkbox" id="rb3"> <label for="rb3">선택</label> <br>
+        <hr>
+        <label><input type="checkbox">선택1</label>
+        <label><input type="checkbox">선택2</label>
+        <label><input type="checkbox">선택3</label>
+        <hr> 
+
+        <!-- 제출버튼과 초기화 버튼: <form>요소 안에 있을때만 사용이 가능 -->
+
+        <input type="submit" value="전송">
+        <input type="reset">
+        <hr>
+
+        <!-- 버튼만들기 -->
+        <!-- 1.input 요소의 타입 버튼 -->
+        <input type="button" value="중복확인" onclick="alert('ㅁ')">
+
+        <!-- 2.button Element -->
+        <button onclick="alert('ㅁ')">중복확인</button>
+        <br>
+        <hr>
+
+        <!-- 이미지버튼 만들기 -->
+        <!-- 1.<button> 요소 안에 img 요소 배치 -->
+        <button><img src="./Image/Selfie_20230328_기상못한어그로_000.jpg" alt="없음!" onclick="alert('ㅁ')" width="51" height="28"></button>
+
+        <input type="image" src="./Image/Selfie_20230328_기상못한어그로_000.jpg" width="51" height="28" onclick="alert('ㅁ')">
+
+        <!-- 여러줄 입력 -->
+        <textarea cols="30" rows="10"></textarea>
+        <hr>
+
+        <!-- 콤보 박스 : select -->
+        <select>
+            <optgroup label="중식">
+                <option selected>짜장면</option>
+                <option>짬뽕</option>
+                <option>탕수육</option>
+            </optgroup>
+        </select>
+        <br>
+        <select>
+            <option selected>짜장면</option>
+            <option>짬뽕</option>
+            <option>탕수육</option>
+        </select>
+        <hr>
+        <input type="password" placeholder="비밀번호임">
+        <hr>
+        <select>
+            <optgroup label="전사(남)">
+                <option>워로드</option>
+                <option>버서커</option>
+                <option>홀리나이트</option>
+            </optgroup>
+            <optgroup label="헌터(남)">
+                <option>스카우터</option>
+                <option>데빌헌터</option>
+                <option>호크아이</option>
+            </optgroup>
+            <optgroup label="무도가(여)">
+                <option>창술사</option>
+                <option>인파이터</option>
+                <option>배틀마스터</option>
+            </optgroup>
+            <optgroup label="마법사">
+                <option>서머너</option>
+                <option>바드</option>
+                <option>소서리스</option>
+            </optgroup>
+        </select>
+    </body>
+</html>
