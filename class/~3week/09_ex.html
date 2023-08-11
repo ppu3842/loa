@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>css 기본 문법</title>
+        <!-- 스타일 작성 영역 -->
+        <style>
+            /* 이 영역 안에서는 CSS 문법 체계를 따릅니다. */
+            /* 기본문법 - 선택자 (속성:값) */
+
+            /* 요소를 찾는 선택의 종류는 */
+
+            /* 1. 타입(요소) 선택자 */
+            h2 {
+                color: aqua;
+            }
+
+            p {
+                color: tomato;
+                font-family: serif;
+                font-weight: bold;
+            }
+
+            /* 2. 전체 선택자 */
+            * {
+                font-family: italic;
+                color: blueviolet;
+            }
+
+            /* 3. 아이디 선택자 <- 이친구가 단일 선택자 라고 해서 우선순위가 조금 높다 */
+            #p1 {
+                color: blue;
+            }
+
+            /* 4. 클래스 선택자 <- 이친구는 두번째로 높을수도 있고 아닐수도 있다 */
+            .aa {
+                color: darkorchid;
+            }
+
+            /* 5. 선택자 그룹 */
+            li,a {
+                color: brown;
+            }
+
+            /* 6. 자식, 자손 선택자 */
+            #ss>p {
+                color: black;
+            }
+            #ss p {
+                color: coral;
+            }
+
+            /* 다른표현 선택자 */
+            p.aa {
+                color: black;
+            } /* 요소 중에서 클래스 속성값이 aa인 요소 */ 
+            p .aa {
+                color: black;
+            } /* 요소의 자손들 중에서 클래스 속성값이 aa인 요소 */
+
+            /* 복합적으로 사용하는 선택자 */
+            #kk ul.gg>li {
+                background-color: chartreuse;
+            }
+
+            /* 7. 속성 선택자 */
+            /* p[class] {font-size: 30px;} */
+            div[id="ss"] {font-weight: bold;}
+
+            /* 8.의사 선택자 */
+            a:link {color: blue;} /*  */
+            a:visited {color: brown;} /*  */
+
+            a:hover {color: aqua;} /*  */
+
+            p:hover {color: aqua;} /*  */
+
+            p:active {color: crimson;} /*  */
+
+        </style>
+    </head>
+    <body>
+        
+        <h2 class="aa">CSS Selector Test</h2>
+
+        <p id="p1" class="aa">Hello world</p>
+        <p class="aa">Nice to meet you</p>
+
+        <ul>
+            <li>aaa</li>
+            <li>bbb</li>
+            <li>cc</li>
+        </ul>
+
+        <div id="ss">
+            <h4>Region</h4>
+
+            <p>Hello World</p>
+
+            <div>
+                <p>Apple</p>
+                <p>Orange</p>
+                <p>Banana</p>
+            </div>
+        </div>
+
+        <div id="kk">
+            <ul>
+                <li>1</li>
+                <li>22</li>
+                <li>333</li>
+            </ul>
+            <ul class="gg">
+                <li>4444</li>
+                <li>55555</li>
+                <li>666666</li>
+            </ul>
+        </div>
+
+        <a href="">aa</a>
+        <br>
+        <a href="http://www.naver.com">Naver</a>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>7주차</title>
+    </head>
+    <body>
+        <!-- 새로리 추가된 type들 -->
+
+        <input type="date" value="2023-07-03"> <br>
+        <input type="datetime"> <br>
+        <input type="month"> <br>
+        <input type="time"> <br>
+        <input type="week"> <br>
+        <input type="color"> <br>
+
+
+        <!-- 모바일에서 소프트 키보드의 모양을 결정함 -->
+
+        <input type="email"> <br>
+        <input type="tel"> <br>
+        <input type="url"> <br>
+
+        <input type="search"> <br>
+
+        <input type="range" min="1" max="10" value="2"> <br>
+
+        <input type="number" min="-2" max="10" step="3" value="-2"> <br>
+        <!-- <input type="text" min="5" max="10" placeholder="5~10 글자만" size="30"> -->
+
+        <input type="text" placeholder="아임텍스트"> <br>
+
+
+        <!-- 반드시 입력해양하는 요소 [필수 입력란] required -->
+        <input type="text" required> <br>
+
+        <input type="text" readonly value="읽기전용"> <br>
+
+        <!-- 그냥 최소(최대)이 아닌 최소(최대) 글자 값 즉 minlength(maxlength)가 있어야 함. -->
+        <input type="text" autofocus minlength="5" maxlength="10"> <br>
+
+        <!--  -->
+        <input type="text" autocomplete list="datas"> <br>
+        <datalist id="datas">
+            <option value="프랑스"></option>
+            <option value="한국"></option>
+            <option value="일본"></option>
+            <option value="중국"></option>
+            <option value="미국"></option>
+        </datalist>
+        <input type="submit">
+
+        
+    </body>
+</html>

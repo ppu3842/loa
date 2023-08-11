@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+
+        <style>
+            
+            table {border: 2px solid; border-collapse: collapse; text-align: center;}
+            th,td {border: 2px solid; padding: 10px,5px;}
+            th {background-color: aqua;}
+            tr:nth-child(2n+0) {background-color: coral;}
+            td:first-child {color: blue; width: 50%;}
+            th {border-bottom: double red 3px; border-right: dotted blueviolet;}
+
+            /* 직접 요소를 만들지 않았지만 숨겨진 요소가 존재 */
+            table>:nth-child(1) {border: 10px solid red;}
+            /* table>tr {} */
+
+        </style>
+
+    </head>
+    <body>
+
+        <table>
+            <tr>
+                <th>이름</th>
+                <th>이메일</th>
+            </tr>
+
+            <tr>
+                <td>김철수</td>
+                <td>ex@naver.com</td>
+            </tr>
+
+            <tr>
+                <td>트럼프</td>
+                <td>em@naver.com</td>
+            </tr>
+
+            <tr>
+                <td>윤석열</td>
+                <td>suck@naver.com</td>
+            </tr>
+            
+            <tr>
+                <td>홍길동</td>
+                <td>dong@naver.com</td>
+            </tr>
+
+        </table>
+
+    </body>
+</html>

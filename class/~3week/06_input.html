@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>form Element</title>
+    </head>
+    <body>
+        <!-- form요소 : anchor처럼 다른 문서를 실행하지만 데이터를 전달할수 있고 이동을 위한 별도의 input 요소 작업 필요 -->
+        <!-- HTTP request 프로토콜의 2가지 요청방식 [get] [post] -->
+
+        <form action="./getTest.php" method="get">
+            <input type="text" name="title"> <!-- name 속성 : 서버에 보낼 데이터를 구별하기 위한 식별자 -->
+            <input type="text" name="msg">
+
+            <input type="submit">
+        </form>
+    </body>
+</html>

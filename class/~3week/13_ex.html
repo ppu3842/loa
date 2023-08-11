@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>LayOut Css</title>
+        <style>
+            /* display 속성 */
+            #aa {display: inline; width: 300px;}
+            #aa {display: inline-block;}
+
+            /* 인라인 요소를 블럭 요소로 */
+            img.bb {display: block; width: 200px;}
+
+            /* display : none */
+            #cc {display: none;}
+        </style>
+    </head>
+
+    <body>
+        <p id="aa">
+            This
+        </p>
+        <a href="">Google</a>
+
+        <strong>Good morning</strong>
+        <img class="bb" src="./Image/Selfie_20230328_기상못한어그로_000.jpg" alt="없음">
+
+        <hr>
+        <!-- display : none -->
+
+        <ul>
+            <li>1</li>
+            <li id="cc">22</li>
+            <li>333</li>
+        </ul>
+
+        <hr>
+
+        <!-- 블럭 요소와 인라인 요소를 같이 사용 할때 고려할 것 -->
+
+        <!-- 블럭 요소 안에 인라인 요소, 또는 다른 블럭 요소 모두 넣을 수 있음 -->
+        <div style="background-color: darkkhaki; border: 2px solid black;">nice <strong>aaa</strong> world </div>
+        <div style="background-color: aqua; border: 2px solid; padding: 5px;">Nice <p>aaa</p> world</div>
+
+        <!-- block 요소 안에 같은 블럭 요소가 있다면? -->
+
+        <p style="background-color: blueviolet; border: solid; padding: 5px;">nice <p>aaaaaaa</p> world</p>
+
+        <!-- <div style="background-color: orange; border: solid; padding: 5px; padding-bottom: 20px;">
+            nice
+            <div>asa</div>
+            <div>dddddd</div>
+            world
+        </div> -->
+
+        <!-- 인라인 요소 안에 블럭 요소를 넣으면 원래 안 됨 -->
+        <span style="background-color: yellow; border: solid;">Nice <p>aaaaa</p> World</span>
+
+        <hr>
+
+        <!-- position 속성 -->
+        <div class="aaa">
+            <p id="one">Block #1</p>
+            <!-- <p id="two">Block #2</p> -->
+            <p id="three">Block #3</p>
+            <img id="two" src="./Image/Selfie_20230328_기상못한어그로_000.jpg" alt="없음" style="padding: 15px; width: 100px; height: 50px;">
+        </div>
+        <style>
+            #one {
+                background-color: cyan;
+                width: 200px;
+                height: 50px;
+            }
+
+            #two {
+                /* color: azure; */
+                /* background-color: blue; */
+                width: 200px; height: 50px;
+                position: static; /* 놓여질 위치에 배치되는 [Default] */
+                position: relative; /* 원래 놓여질 위치에서 위치 속성으로 조정 가능 */
+                position: absolute; /* 문서의 좌측 상단을 기준으로 위치를 설정 (원래 배치될 위치에서 벗어남) */
+                /* absolute 일때 부모의 영역을 기준으로 상단에 배치 하고 싶다면 부모 요소의 position 속성이 static이 아니어야 함 */
+                position: fixed; /* 브라우저의 창의 최상단을 기준으로 위치를 설정함 */
+
+                /* 위치좌표 설정 속성 static일때는 무시 됨 */
+                /* top: 30px; */
+                /* left: 50px; */
+                right: 50px;
+                bottom: 20px;
+            }
+
+            #three {
+                background-color: gray;
+                width: 200px; height: 50px;
+            }
+
+            /* 블럭들의 부모 요소 */
+            div.aaa {
+                background-color: black;
+                /* position: relative; */
+                background-image: url(./Image/image.png);
+            }
+        </style>
+    </body>
+
+</html>
