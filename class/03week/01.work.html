@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+
+        <script>
+            // 홈페이지에 이벤트 리스너 (load) 했을때
+            // 총 4번 정보 창 띄움(순서대로) 4번 중 3번째 정보창의 텍스트는 몇 개중 랜덤 텍스트
+            // 그후 document.write(끝나는 시점의 sec + "밀리초 걸림")
+
+            var v= {
+                0: "aa",
+                1: "bb",
+                2: "cc"
+            }
+
+            var d= new Date();
+
+            function Rand(){
+                var num= Math.floor(Math.random() * 10);
+                num= num % 3
+                return num;
+            }
+
+            document.addEventListener("DOMContentLoaded", function(){
+                alert("Hong");
+                alert("맨오브스틸");
+                alert(v[Rand()]);
+                alert(0);
+
+                document.write(d.getTime() + "밀리초가 걸림" + "<br>");
+            })
+
+        </script>
+    </head>
+</html>
