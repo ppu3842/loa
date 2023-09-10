@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Keybord Event</title>
+        <script>
+            function keyPress(){
+                // 키보드 이벤트는 window 객체 안에 event 관리객체가 정보를 가지고 있음
+                var code= window.event.keyCode;
+
+                document.getElementById('in1').value= code;
+                document.getElementById('in2').value= String.fromCharCode(code);
+            }
+        </script>
+    </head>
+    <body onkeypress="keyPress()">
+        <input type="text" id="in1">
+        <input type="text" id="in2">
+    </body>
+</html>
