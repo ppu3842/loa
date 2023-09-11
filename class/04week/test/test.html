@@ -9,19 +9,21 @@
         <script>
             $('document').ready(function(){
                 $('#submit').click(function(){
+
                     $.ajax({
                         url: './test.php',
-                        datatype: 'text/json; charset=utf-8',
+                        // dataType: 'json',
                         type: 'POST',
                         data: {msg: $('#msg').val()},
-                        success: function(result){
-                            $('#response').html(result);
-                            console.log(result);
+                        success: function(data){
+                            $('#response').html(data['msg']);
                         }
                     });
+
                 });
-            })
+            });
         </script>
+        
         <style>
 
         </style>
@@ -29,6 +31,6 @@
     <body>
         <input type="text" id="msg">
         <input type="submit" id="submit"><br>
-        <div id="response">a</div>
+        <div id="response">response</div>
     </body>
 </html>
